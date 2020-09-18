@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 3px;
+    padding: 0;
+
+}
+
+body {
+    background-color: white;
+    font-family: arial;
+    width: 100vw;
+    height: 100vh;
+
+        &.home,
+        &.rood,
+        &.oranje,
+        &.geel,
+        &.groen,
+        &.blauw,
+        &.indigo,
+        &.violet {
+                .color {            
+                        visibility: visible; 
+                        font-family: 'Sofia';
+                        font-size: 2rem;
+                        font-weight: bold;
+                        color: pink;        
+                }
+        }
+}
+
+.btn-toggle-nav {
+        width: 50px;
+        height: 50px;
+        top: 0;
+        position: fixed;
+        cursor: pointer;
+}
+
+aside {
+        position: absolute;
+        top: 50px;
+        width:150px;
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+        
+        ul {
+                list-style-type: none;
+        }
+
+        li {
+                text-align: center;
+                padding: 8px;
+                margin: 2px;
+                border: 2px solid lightgrey;
+                cursor: pointer;
+                transform: translateX(-160px);
+                transition: transform 0.6s ease;
+        }
+
+        &.menu-open li {
+                transform: translateX(0);
+        }
+}
+
+.home {
+        background-color: white;
+        transition-delay: 0.1s;
+}
+
+.rood {
+        background-color: red; 
+        transition-delay: 0.05s;
+}
+
+.oranje {
+        background-color: orange;
+        transition-delay: 0.1s;
+}
+
+.geel {
+        background-color: yellow;
+        transition-delay: 0.15s;
+}
+
+.groen {
+        background-color: green;
+        transition-delay: 0.2s;
+}
+
+.blauw {
+        background-color: blue;
+        transition-delay: 0.25s;
+}
+
+.indigo {
+        background-color: indigo;
+        transition-delay: 0.3s;
+}
+
+.violet {
+        background-color: violet;
+        transition-delay: 0.35s;
+}
+
+.color {
+        display: flex;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        visibility: hidden;
+}
